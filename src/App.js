@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Theme from './styles/Theme';
+import GlobalStyle from './styles/GlobalStyles';
+import Header from './components/Nav';
+import CustomCursor from './components/Cursor';
+import IndexPage from './pages/IndexPage';
+import ArchivePage from './pages/ArchivePage';
+import Footer from './components/Footer';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  function toggleTheme() {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Theme theme={theme}>
+        <CustomCursor />
+        <GlobalStyle />
+        <Header toggleTheme={toggleTheme} theme={theme}/>
+        <Routes>
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/archive" element={<ArchivePage />} />
+        </Routes>
+        <Footer/>
+      </Theme>
     </div>
   );
 }
