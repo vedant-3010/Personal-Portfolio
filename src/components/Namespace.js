@@ -19,10 +19,7 @@ function Namespace() {
           <div className="circle2 circle"></div>
           <div className="circle3 circle"></div>
         </Window>
-        <p>
-          <span>const</span> Portfolio = &#123;
-          <br />
-        </p>
+        
         <Class>
           <span>&nbsp;&nbsp;&nbsp;&nbsp;const</span> Vedant = &#123;
           <br />
@@ -53,7 +50,6 @@ function Namespace() {
           <span>&nbsp;&nbsp;&nbsp;&nbsp;&#125;;</span>
           <br />
         </Class>
-        <span>&#125;;</span>
         <br />
       </StyledNamespace>
     </>
