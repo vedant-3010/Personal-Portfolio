@@ -30,7 +30,7 @@ function Projects() {
           video={ecommerce}
           title="Vortex Chat"
           text="This is a real-time chat application that allows users to create one-on-one chat as well as group chat. It allow the admin to create groups and add users to the groups. I also has notification feature which notifies the user when a new message is received."
-          link="https://github.com/vedant-3010/vortex-chat"
+          link="https://vortexchat.vercel.app/"
           technologies={technologies1}
         />
         <Featured
