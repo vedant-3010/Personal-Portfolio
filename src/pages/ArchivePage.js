@@ -6,7 +6,10 @@ import styled from "styled-components";
 // import { faCodeBranch, faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { Technologies } from "../styles/Styles";
 import { formatDate } from "../util/useUtil"
-
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCodeBranch, faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCodeBranch, faExternalLink } from "@fortawesome/free-solid-svg-icons";
 function Archive() {
     const [repos, setRepos] = useState([]);
 
@@ -57,11 +60,11 @@ function Archive() {
               </td>
               <td>
                 <a href={repo.html_url} target="_blank" rel="noreferrer">
-                  {/* <FontAwesomeIcon icon={faCodeBranch} /> */}
+                  <FontAwesomeIcon icon={faCodeBranch} />
                 </a>
                 {repo.homepage && (
                   <a href={repo.homepage} target="_blank" rel="noreferrer">
-                    {/* <FontAwesomeIcon icon={faExternalLink} /> */}
+                    <FontAwesomeIcon icon={faExternalLink} />
                   </a>
                 )}
               </td>
