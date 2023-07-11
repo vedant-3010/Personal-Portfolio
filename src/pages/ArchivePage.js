@@ -57,11 +57,11 @@ function Archive() {
               </td>
               <td>
                 <a href={repo.html_url} target="_blank" rel="noreferrer">
-                  {/* <FontAwesomeIcon icon={faCodeBranch} /> */}
+                  <FontAwesomeIcon icon={faCodeBranch} />
                 </a>
                 {repo.homepage && (
                   <a href={repo.homepage} target="_blank" rel="noreferrer">
-                    {/* <FontAwesomeIcon icon={faExternalLink} /> */}
+                    <FontAwesomeIcon icon={faExternalLink} />
                   </a>
                 )}
               </td>
