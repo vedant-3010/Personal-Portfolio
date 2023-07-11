@@ -4,8 +4,12 @@ import { Technologies } from '../styles/Styles'
 import { motion } from "framer-motion"
 import { useScroll } from '../util/useScroll';
 import { slideAnim } from "../animation"
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCode } from '@fortawesome/fontawesome'
 
 function Featured({title, video, text, link, technologies}) {
   const [ref, controls] = useScroll();
@@ -29,7 +33,7 @@ function Featured({title, video, text, link, technologies}) {
                <li key={technology}>{technology}</li>
              ))}
              </Technologies>
-             <a href={link} target="_blank" rel="noreferrer"></a>
+             <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCode}></FontAwesomeIcon></a>
            </More>
          </About>
       </FeaturedProject>
@@ -40,7 +44,6 @@ const FeaturedProject = styled(motion.div)`
   margin-bottom: 4rem;
   @media (min-width: 850px) {
     display: flex;
-    decoration: underline;
   }
 `;
 
@@ -50,16 +53,11 @@ p{
   font-weight: bold;
   font-size: 0.7rem;
   color: var(--color-main)
-  decoration: underline;
-}
-a{
-  text-decoration: underline;
 }
 `
 const AboutText = styled.div`
   padding: 2rem;
   background: var(--color-bg-2);
-  decoration: underline;
 `
 const More = styled.div`
 padding: 1rem;
@@ -82,7 +80,7 @@ const Image = styled.div`
 const Video = styled.video`
     width: 100%;
     height: 100%;
-    object-fit: default;
+    object-fit: cover;
     border-radius: 10px;
 `
 

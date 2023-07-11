@@ -9,12 +9,9 @@ import ecommerce from "../assets/videoes/ecommerce.mp4";
 
 const technologies1 = [
   "React",
-  "Redux",
-  "Node",
-  "Express",
+  "Socket.io",
   "MongoDB",
-  "Chakra",
-  "Socekt.io",
+  "Express",
 ];
 
 const technologies2 = ["Next.js", "tailwindcss", "typescript", "Prisma"];
@@ -29,15 +26,15 @@ function Projects() {
         <Featured
           video={ecommerce}
           title="Vortex Chat"
-          text="This is a real-time chat application that allows users to create one-on-one chat as well as group chat. It allow the admin to create groups and add users to the groups. I also has notification feature which notifies the user when a new message is received."
-          link="https://vortexchat.vercel.app/"
+          text="This is a real-time chat application that allows users to create one-on-one chats as well as participate in group chats. The application provides an admin functionality where admin can add and remove users to these groups. Additionally, the application includes a notification feature that alerts users when they receive a new message.  "
+          link="https://github.com/vedant-3010/vortex-chat"
           technologies={technologies1}
         />
         <Featured
           video={studiebnb}
           title="Twitter Clone"
-          text="This is a clone of twitter. It is build using Next.js , typescript, tailwindcss, prisma. It has all the features of twitter like posting tweets, liking tweets, following users, etc."
-          link="https://twitterclone-alpha.vercel.app/"
+          text="This is a Twitter clone built using Next.js, TypeScript, Tailwind CSS, and Prisma. The application replicates many features found in Twitter, including the ability to post tweets, like tweets, and follow other users. "
+          link="https://github.com/vedant-3010/Twitter-Clone"
           technologies={technologies2}
         />
       </FeaturedContainer>

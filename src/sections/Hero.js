@@ -21,9 +21,11 @@ const HeroSection = () => {
         </motion.div>
         <Hide>
           <motion.p variants={slideAnim.up}>
-            I build web-based solutions that prioritize functionality and user
-            experience. I enjoy turning ideas into reality by creating practical
-            and visually appealing web applications.
+            I am a MERN stack developer with a passion for creating dynamic and
+            engaging web applications. With expertise in MongoDB, Express.js,
+            React.js, and Node.js, From crafting interactive front-end
+            interfaces to designing efficient server-side architectures, I can
+            turn ideas into functional, high-performance applications.
           </motion.p>
         </Hide>
         <ButtonContainer>

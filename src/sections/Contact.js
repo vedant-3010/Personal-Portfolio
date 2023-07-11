@@ -29,7 +29,7 @@ const Contact = () => {
             <IconContainer variants={slideAnim.up}>
                 <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
             </IconContainer>
-            <motion.p variants={slideAnim.up}>vedantdandge11@gmail.com</motion.p>
+            <motion.p variants={slideAnim.up}>vedantdandge3010@gmail.com</motion.p>
             </Info>
           </Hide>
           <Hide>
@@ -87,6 +87,8 @@ justify-content: center;
 gap: 1rem;
 margin-bottom: 2rem;
 `
+
+
 
 
 
