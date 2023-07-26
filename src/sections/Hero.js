@@ -40,6 +40,7 @@ const HeroSection = () => {
           </Hide>
         </ButtonContainer>
       </Description>
+      <Wave />
     </StyledHero>
   );
 };
