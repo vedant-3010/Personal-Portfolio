@@ -17,17 +17,17 @@ const lightTheme = {
 };
 
 const darkTheme = {
-  backgroundColor: "#0F172A",
-  secondBackground: "#121b31",
-  borderColor: "#0d1324",
-  navBackground: "rgba(13, 25, 48, 0.3)",
+  backgroundColor: "#111111",
+  secondBackground: "#1A1A1A",
+  borderColor: "#1A1A1A",
+  navBackground: "#1A1A1A",
   headerColor: '#e0e7fd',
-  textColor: "#8493A8",
-  mainColor: "#5CE8D2",
+  textColor: "#7e7e82",
+  mainColor: "#0aff9d",
   secondColor: "#122B39",
-  gradientColor: "linear-gradient(45deg, #5CE8D2, #48c2b0)",
-  boxShadow: "8px 8px 18px #0F172A, -8px -8px 18px #0F172A",
-  keyword: "#326cb8",
+  gradientColor: "linear-gradient(45deg, #0AFF9D, #48c2b0)",
+  boxShadow: "8px 8px 18px #1A1A1A, -8px -8px 18px #1A1A1A",
+  keyword: "#0AFF9D",
   className: "#389d89"
 };
 
