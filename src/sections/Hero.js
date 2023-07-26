@@ -14,13 +14,13 @@ const HeroSection = () => {
             <motion.h2 variants={slideAnim.up}>Hi, my name is </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={slideAnim.up}>
+            <motion.h2 variants={slideAnim.right}>
               <span>Vedant Dandge</span>
             </motion.h2>
           </Hide>
         </motion.div>
         <Hide>
-          <motion.p variants={slideAnim.up}>
+          <motion.p variants={slideAnim.right}>
             I am a MERN stack developer with a passion for creating dynamic and
             engaging web applications. With expertise in MongoDB, Express.js,
             React.js, and Node.js, From crafting interactive front-end
@@ -35,12 +35,11 @@ const HeroSection = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <motion.button variants={slideAnim.up}>Github</motion.button>
+              <motion.button variants={slideAnim.left}>Github</motion.button>
             </a>
           </Hide>
         </ButtonContainer>
       </Description>
-      <Wave />
     </StyledHero>
   );
 };
